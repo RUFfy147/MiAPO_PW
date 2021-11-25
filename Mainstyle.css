@@ -28,7 +28,7 @@ body{
   position: fixed;
   width: 200px;
   height: 1080px;
-  background: rgba(87, 203, 212, 0.8); ;
+  background: rgba(87, 203, 212, 0.8);
 }
 .footer{
   position: absolute;
@@ -138,19 +138,4 @@ input[name='r']{
 }
 #r4:checked ~ .s4{
   margin-left: -75%;
-}
-.scroller{
-  top: 80%;
-  background-color: white;
-  position: absolute;
-  width: 1510px;
-  height: 150px;
-}
-.scroller_item{
-  margin-top: 10px;
-  width: 500px;
-  height: 140px;
-}
-li{
-  float: left;
 }

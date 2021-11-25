@@ -1,0 +1,156 @@
+body{
+  background: red;
+  margin-left: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 200px;;
+  width: 1520px;
+  height: 1500px;
+}
+.header{
+  z-index: 1;
+  background: black;
+  width: 1520px;
+  height: 100px;
+  position: fixed;
+}
+.leftpanel{
+  z-index: 3;
+  margin-left: -200px;
+  position: fixed;
+  width: 200px;
+  height: 1080px;
+  background: rgba(87, 203, 212, 0.8);
+}
+.rightpanel{
+  margin-left: 1510px;
+  z-index: 3;
+  position: fixed;
+  width: 200px;
+  height: 1080px;
+  background: rgba(87, 203, 212, 0.8); ;
+}
+.footer{
+  position: absolute;
+  margin-top: 1500px;
+  background: black;
+  height: 150px;
+  width:1520px;
+}
+.info{
+  background: blue;
+  width: 300px;
+  height: 150px;
+}
+.connection{
+  background: blue;
+  width: 300px;
+  height: 150px;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+ ul li.info{
+   float: left;
+  }
+ul li.connection{
+  float: left;
+}
+ul li::marker {
+  color: blue;
+}
+.slider{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  z-index: 0;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.navigation{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: .4;
+  border-radius: 30px;
+  transition: all .1s ease;
+}
+.bar:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+input[name='r']{
+  position: absolute;
+  visibility: hidden;
+}
+.sliders {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width: 25%;
+  transition: all .9s ease;
+}
+.slide1{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(255, 120, 110, 1), rgba(20, 255, 247, 1));
+}
+.slide2{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(95deg, rgba(255, 120, 110, 1), rgba(20, 255, 247, 1));
+}
+.slide3{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(15deg, rgba(255, 120, 110, 1), rgba(20, 255, 247, 1));
+}
+.slide4{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(95deg, rgba(255, 120, 110, 1), rgba(20, 255, 247, 1));
+}
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s2{
+  margin-left: -25%;
+}
+#r3:checked ~ .s3{
+  margin-left: -50%;
+}
+#r4:checked ~ .s4{
+  margin-left: -75%;
+}
+.scroller{
+  top: 80%;
+  background-color: white;
+  position: absolute;
+  width: 1510px;
+  height: 150px;
+}
+.scroller_item{
+  margin-top: 10px;
+  width: 500px;
+  height: 140px;
+}
+li{
+  float: left;
+}
